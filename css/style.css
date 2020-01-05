@@ -1,0 +1,472 @@
+@font-face {
+	font-family: "Roboto", sans-serif;
+	font-family: "Oregano", cursive;
+	font-family: "Inconsolata", monospace;
+} 
+
+html, body {
+	height: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	/*letter-spacing: -0.10pt;*/
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* tell the browser to render HTML 5 elements as block */
+article, aside, figure, header, hgroup, nav, section {
+	display:block;
+}
+
+body {
+	font: 300 90% "Roboto", arial, sans-serif;
+	background: #FFFFFF;
+	color: #000;
+}
+
+header {
+	position: relative;
+	background: url(images/header.jpeg) no-repeat;
+	height: 430px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.intro {
+	text-align: justify;
+	font: 300 .95em "Roboto", arial, sans-serif;
+	font-size: 117%;
+	line-height: 17pt;
+	/*letter-spacing: 0.05pt;*/
+	margin-bottom: 15px;
+	/*text-shadow: 0px 2px 1px #000;*/
+}
+
+.photo {
+	position: absolute;
+	margin-left: auto; 
+	margin-right: auto;
+	top: 0px;
+	width: 1200px;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+#photo_halfbody {
+	margin: 50px 100px 0 0;
+	float: right;
+}
+
+#photo_fade {
+	margin: 510px 40px 0 0;
+	float: right;
+}
+
+#welcome {
+	color: #FFF;
+	height: 310px;
+	width: 720px;
+	padding: 0px 0 0 70px;
+}
+
+#cv {
+	position: absolute;
+	margin-left: auto; 
+	margin-right: auto;
+	top: 340px;
+	width: 1200px;
+	left: 190px;
+	right: 0;
+}
+
+#contact {
+	position: absolute;
+	margin-left: auto; 
+	margin-right: auto;
+	top: 380px;
+	width: 1200px;
+	left: 250px;
+	right: 0;
+}
+
+#contact b {
+	font-weight: normal;
+	/*text-shadow: 0px 0px 1px;*/
+}
+
+.info {
+	color: #FFF;
+	padding: 5px 0 0 0;
+	font: 300 130% "Roboto", arial;
+	margin: 0 0 0px 0;
+}
+
+.research h4 {
+	color: #000;
+	padding: 0 0 5px 0;
+	font: 500 108% "Roboto", arial;
+	/*letter-spacing: -0.2pt;*/
+	text-shadow: 0px 0.5px 0.5px #000;
+}
+
+.project h4 {
+	color: #000;
+	padding: 10px 0 0 5px;
+	font: 500 108% "Roboto", arial;
+	text-shadow: 0px 0px 0.5px #000;
+}
+
+#update h5 {
+	color: #000;
+	font: 300 100% "Roboto", arial;
+	line-height: 17pt;
+	/*letter-spacing: -0.2pt;*/
+	padding: 0px 0 0 10px;
+	/*text-shadow: 0px 0px 1px #BBB;*/
+}
+#update b {
+	font-weight: 500;
+	text-shadow: 0px 0px 0.5px;
+}
+.date {
+	padding-right: 10pt;
+}
+
+.sep {
+	padding: 0pt 2pt 0 2pt;
+	font-weight: 700;
+	font-size: 14pt;
+}
+
+.project h5 {
+	color: #000;
+	padding: 2px 0 0 5px;
+	font: 300 100% "Roboto", arial;
+	/*text-shadow: 0px 0px 1px #BBB; */
+	/*letter-spacing: -0.3pt;*/
+}
+
+h6 {
+	color: #000;
+	padding: 0 0 5px 0;
+	font: normal 100% "Roboto", arial;
+}
+
+.interest {color: #FFE66D; font-weight: 500;}
+.highlight {color: #FFE66D; font-weight: 500; }
+.author {text-shadow: 0px 0px 0.5px #BBB; }
+.venue {color: #2541B2; text-shadow: 0px 0.5px 1px #3BCEAC; }
+.special {color: #F00; }
+.me {color: #2541B2; text-shadow: 0px 0.5px 1px #3BCEAC; font-weight: 500; }
+.and {color: #888; }
+.showhide {font-weight: 300; font-size: 90%; }
+
+a, a:hover {
+	outline: none;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+#welcome a {color: #4ECDC4; text-shadow: 0px 0px 1px;}
+#welcome a:hover {color: #2EC4B6; text-shadow: 0px 0px 2px #08F;}
+#cv a {font-weight: normal; color: #4ECDC4; text-shadow: 0px 0px 1px; font-weight: 500;}
+#cv a:hover {color: #2EC4B6; text-shadow: 0px 0px 2px #08F; font-weight: 500;}
+.content a {color: #6CF; text-shadow: 0px 0px 1px #2D6; }
+.content a:hover {color: #058; text-shadow: 0px 0px 2px #0BF; }
+.inactive {color:#888; text-shadow: 0px 0px 1px #AAA; }
+
+.venue b {
+	font-weight: normal;
+	text-shadow: 0px 0px 1px;
+}
+.special b {
+	font-weight: normal;
+	text-shadow: 0px 0px 0.5px;
+}
+.teach b {
+	font-weight: normal;
+	text-shadow: 0px 0px 0.5px;
+}
+
+.left {
+	float: left;
+	width: auto;
+	margin-right: 10px;
+}
+
+.right {
+	float: right; 
+	width: auto;
+	margin-left: 10px;
+}
+
+.center {
+	display: block;
+	text-align: center;
+	margin: 20px auto;
+}
+
+#main, #container, #title, #site_content {
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+#blackheader {
+	position: absolute;
+	top: 0px;
+}
+
+#whitefade {
+	position: absolute;
+	bottom: 0px;
+}
+
+#title {
+	width: 1200px;
+	height: 95px;
+	background: transparent;
+	padding: 20px 0 0 230px;
+}
+
+#title h1 {
+	font: 700 400% "Oregano", arial, sans-serif;
+	border-bottom: 0;
+	text-transform: none;
+	text-shadow: 5px 5px #000022;
+	letter-spacing: 0.5pt;
+	padding: 0;
+	color: #FFF;
+}
+
+.video_div {
+	display: none;
+}
+
+#page {
+	position: fixed;
+	display: none;
+	background-color: rgba(255,255,255,0.95);
+	margin: 20px 50px 20px 50px;
+	width: 1100px;
+	top: 0px;
+	bottom: 0px;
+	border: 5px solid #080;
+	box-shadow: 0px 0px 20px 5px #240;
+	z-index: 5;
+}
+
+#page-content {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+
+#close {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+.research {
+	text-align: left;
+	width: 1200px;
+	float: left;
+	padding: 5px 0 25px 0;
+	background: no-repeat transparent right top url(images/res.png);
+	background-size: 500px 80px;
+}
+
+.project {
+	text-align: left;
+	width: 585px;
+	padding: 0 0 20px 0;
+	background: no-repeat transparent right top url(images/res.png);
+	background-size: 400px 60px;
+}
+
+.res_pic {
+	float: left;
+	width: 250px;
+	margin: 0 0 0px 0;
+	padding: 10px 15px 0px 10px;
+}
+
+.res_desc {
+	font: 300 105% "Roboto", arial;
+	float: left;
+	width: 855px;
+	margin: 0 0 0px 0;
+	padding: 10px 15px 0px 40px;
+	line-height: 17pt;
+}
+
+.res_intro_pic {
+	float: left;
+}
+
+.res_intro_text {
+	float: right;
+	font: 300 91% "Roboto", arial;
+	width: 810px;
+	color: #666;
+	/*letter-spacing: -0.2pt;*/
+	text-align: justify;
+	margin: 3px 0 0 0;
+	line-height: 14pt;
+}
+
+.res_divider {
+	margin: -7px 0 0 0;
+}
+
+.proj_divider {
+	margin: -7px 0 0 0;
+}
+
+.proj_pic {
+	float: left;
+	width: 205px;
+	margin: 0 0 0px 0;
+	padding: 10px 10px 0px 5px;
+}
+
+.proj_desc {
+	font: 105% "Roboto", arial;
+	float: left;
+	width: 325px;
+	padding: 8px 5px 0px 20px;
+}
+
+.proj_intro {
+	font: 300 87% "Roboto", arial;
+	color: #666;
+	/*letter-spacing: -0.2pt;*/
+	text-align: justify;
+	margin: 10px 0 0 0;
+	line-height: 14pt;
+}
+
+.exp_pic {
+	float: left;
+	width: 70px;
+	margin: 0 0 0px 0;
+	padding: 0px 10px 0px 5px;
+}
+
+.exp_content {
+	float: left;
+	width: 1090px;
+	font: 300 105% "Roboto", arial;
+	margin: 0px 0 15px 0;
+	line-height: 1.3em;
+}
+
+.exp_intro {
+	font: 300 91% "Roboto", arial;
+	color: #666;
+}
+
+.teach_pic {
+	float: left;
+	width: 40px;
+	margin: 0 0 0px 0;
+	padding: 0px 10px 0px 5px;
+}
+
+.teach_content {
+	float: left;
+	width: 1120px;
+	font: 300 105% "Roboto", arial;
+	margin: 0px 0 15px 0;
+	line-height: 1.3em;
+}
+
+.teach_intro {
+	font: 300 91% "Roboto", arial;
+	color: #666;
+}
+
+.bibtex {
+	position: absolute;
+	display: none;
+	background: #FFF;
+	margin-top: 8px;
+	padding: 10px 10px 10px 10px;
+	font: 85% "Inconsolata";
+	border: 5px solid #080;
+}
+
+#site_content {
+	position: absolute;
+	margin-left: auto; 
+	margin-right: auto;
+	top: 0px;
+	width: 1200px;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	margin: 0px auto 0 auto;
+	padding: 0px 0 0px 0;
+	/*text-shadow: 2px 2px #000;*/
+} 
+
+.sec_title {
+	color: #2541B2;
+	font: 170% "Roboto", arial;
+	margin: 20px 0 10px 0;
+	padding: 10px 0 5px 0;
+	text-shadow: 1px 1px 2px #1768AC;
+}
+
+.content {
+	text-align: left;
+	width: 1200px;
+	float: left;
+	font-size: 117%;
+	padding: 0px 10px 10px 10px;
+}
+
+.separator {
+	width: 100%;
+	height: 0;
+	border-top: 1px solid #D9D5CF;
+	border-bottom: 1px solid #FFF;
+	margin: 0 0 20px 0;
+}
+
+table {
+	margin: 10px 0 30px 0;
+}
+
+table tr th, table tr td {
+	background: #555;
+	color: #FFF;
+	padding: 7px 4px;
+	text-align: left;
+	text-shadow: none;
+}
+
+table tr td {
+	background: #DDD;
+	color: #47433F;
+	border-top: 1px solid #FFF;
+}
+
+/* autoArrows CSS */
+span.sf-arrow {
+	width: 7px;
+	height: 7px;
+	position: absolute;
+	top: 20px;
+	right: 5px;
+	display: block;
+	background: url(images/arrows-white.png) no-repeat 0 0;
+	overflow: hidden; /* making sure IE6 doesn"t overflow and expand the box */
+	font-size: 1px;
+}
