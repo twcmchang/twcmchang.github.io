@@ -30,7 +30,7 @@ body {
 header {
 	position: relative;
 	background: url(images/header.jpeg) no-repeat;
-	height: 500px;
+	height: 475px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -69,7 +69,7 @@ header {
 
 #welcome {
 	color: #FFF;
-	height: 310px;
+	height: 350px;
 	width: 720px;
 	padding: 0px 0 0 70px;
 }
@@ -78,7 +78,7 @@ header {
 	position: absolute;
 	margin-left: auto; 
 	margin-right: auto;
-	top: 340px;
+	top: 400px;
 	width: 1200px;
 	left: 190px;
 	right: 0;
@@ -88,7 +88,7 @@ header {
 	position: absolute;
 	margin-left: auto; 
 	margin-right: auto;
-	top: 380px;
+	top: 435px;
 	width: 1200px;
 	left: 250px;
 	right: 0;
