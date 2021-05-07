@@ -1,564 +1,174 @@
-<!DOCTYPE html>
-<html
-	class=" js canvas canvastext geolocation crosswindowmessaging websqldatabase indexeddb hashchange historymanagement draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions  video audio localstorage sessionstorage webworkers applicationcache svg smil svgclippaths   fontface">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Chun-Min Chang</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Chun-Min Chang</title>
-	<meta name="description"
-		content="Chun-Min Chang, M.S. student @ Machine Learning and Signal Processing, University of Wisconsin-Madison">
-	<meta name="keywords" content="website keywords, website keywords">
-	<meta https-equiv="content-type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!-- modernizr enables HTML5 elements and feature detects -->
-	<script type="text/javascript" src="css/modernizr-1.5.min.js"></script>
-	<script src="css/jquery.min.js"></script>
-	<script src="css/jquery-1.10.2.js"></script>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<!-- <script> -->
-	<!-- window.dataLayer = window.dataLayer<span class="sep">&bull;</span>[]; -->
-	<!-- function gtag(){dataLayer.push(arguments);} -->
-	<!-- gtag("js",new Date()); -->
-	<!-- gtag("config","UA-88237102-2"); -->
-	<!-- </script> -->
-	<!-- 	<meta name="google-site-verification" content="-qf5PjwYVsvTpZ7HphVPX7GvqNF82-Zzjq8ALA7O-lU"> -->
-	<link rel="icon" href="images/thinkout.png">
-</head>
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+        <section class="wrapper style1 content-align-left">
+          <div class="inner">
+            <!-- introduction -->
+            <header class="align-center">
+              <h1>Chun-Min Chang</h1>
+              <p>Senior Algorithm Engineer (ML)</p>
+              <p>
+                <a href="https://www.linkedin.com/in/chun-min-chang/">LinkedIn</a> | <a href="https://scholar.google.com.tw/citations?user=Xw3CAEwAAAAJ&hl=en">Google Scholar</a> | <a href="https://github.com/twcmchang">Github</a>
+                <br>Email: twcmchang [at] gmail [dot] com
+              </p>
+            </header>
+            <p>
+              I am interested in network pruning, quantization and low-precision inference to accelerate deep learning models on top of dedicated hardware blocks. Before coming to the states, I spent wonderful years in delivering deep learning technologies to the healthcare space in Taiwan with <a href="https://scholar.google.com.tw/citations?user=mgva3UgAAAAJ&hl=en">Sheng-Wei Chen</a> at Academia Sinica. My recent research was published in <span class="green">Nature Communications</span>, <span class="green">npj Digital Medicine</span>, <span class="green"> IEEE International Joint Conference on Neural Networks (IJCNN)</span>.
+            </p>
+            <hr>
 
-<body style="">
-	<header>
-		<img src="./images/header.jpeg" id="whitefade">
-	</header>
+            <header class="align-left">
+              <h3>Work Experience</h3>
+            </header>
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+              <div class="content">
+                <!-- <header> -->
+                  <p><b>Sr. Algorithm Engineer (ML)</b> at <a href="https://www.ambarella.com/"><u>Ambarella Corporation</u></a>, Santa Clara, U.S.A., 2020/06 - Now</p>
+                <!-- </header> -->
+                <p>Accelerate model inference by optimizing bit width of tensors in post-training quantization and folding operations in a frozen computation graph. Also, implement specialized primitives and arithemtic operations for various target chips with GPU acceleration.</p>
+              </div>
+            </section>
 
-	<div id="blackheader">
-		<img src="images/blackfade.png" style="position: absolute;">
-	</div>
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+              <div class="content">
+                <header>
+                  <p><b>Machine Learning Engineer</b> at <a href="https://piccollage.com/">Cardinal Blue Software (PicCollage)</a>, Taipei, Taiwan, 2019/01 - 2019/07</p>
+                </header>
+                <p>Design and deploy lightweight deep learning models on iOS and Android platforms for photo style transfer, photo super-resolution, low-light photo enhancement, and object instance segmentation.</p>
+              </div>
+            </section>
 
-	<div class="photo"> <img src="./images/halfbody.png" id="photo_halfbody" width="230"> </div>
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+              <div class="content">
+                <header>
+                  <p><b>Research Assistant</b> at <a href="https://www.iis.sinica.edu.tw/en/index.html">Academia Sinica</a> (alternative military service), Taipei, Taiwan, 2015/10 - 2018/12</p> 
+                </header>
+                <p>Apply cutting-edge machine learning techniques to interdisciplinary studies, and publish research works in Nature Digital Medicine, Nature Communications, Computer methods and programs in biomedicine.</p>
+              </div>
+            </section>
 
-	<div id="site_content">
+            <hr> <!-- Research project -->
+            <header class="align-left">
+              <h3>Publications</h3>
+            </header>
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+              <div class="content">
+                <header>
+                  <h4>Automation of The Kidney Function Prediction and Classification Through Ultrasound-based Kidney Imaging Using Deep Learning</h4>
+                  <p>Chin-Chi Kuo, <b><u>Chun-Min Chang</u></b>, Kuan-Ting Liu, Wei-Kai Lin, Hsiu-Yin Chiang, Chih-Wei Chung, Meng-Ru Ho, Pei-Ran Sun, Rong-Lin Yang, and Kuan-Ta Chen<br>
+                    <span class="green">npj Digital Medicine 2019</span> / <a href="https://www.nature.com/articles/s41746-019-0104-2">Paper</a></p>
+                </header>
+                <p>We developed a deep learning approach for automatically determining the estimated glomerular filtration rate (eGFR) and chronic kidney disease (CKD) status over 4,505 kidney ultrasound images. Overall CKD status classification accuracy of our model was 85.6% —higher than that of experienced nephrologists (60.3%–80.1%).</p>
+              </div>
+              <div class="image">
+                <img src="images/ckd.png"/>
+              </div>
+            </section>
 
-		<div id="title">
-			<h1>Chun-Min Chang</h1>
-		</div>
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+              <div class="content">
+                <header>
+                  <h4>Artificial Intelligence Reveals Environmental Constraints on Colour Diversity in Insects</h4>
+                  <p>Sipher Wu*, <b><u>Chun-Min Chang</u></b>*, Guan-Shuo Mai, Dustin R Rubenstein, Chen-Ming Yang, Yu-Ting Huang, Hsu-Hong Lin, Li-Cheng Shih, Sheng-Wei Chen, and Sheng-Feng Shen<br>
+                  <span class="green">Nature Communications(*equal contribution) 2019</span> / <a href="https://www.nature.com/articles/s41467-019-12500-2">Paper</a></p>
+                </header>
+                
+                <p>Using over 20,000 images with GPS locality information belonging to nearly 2,000 moth species, our approach learned deep representations that accurately predict each species’ mean elevation based on colour and shape, as well as help identify the underlying mechanisms generating this biogeographic pattern.</p>
+              </div>
+              <div class="image">
+                <img src="images/moth.png"/>
+              </div>
+            </section>
 
-		<div id="welcome">
-			<p class="intro">
-				I am a graduate student in the <span class="interest">Machine Learning and Signal Processing</span>
-				program at <a href="https://www.wisc.edu/" target="_blank">University of Wisconsin-Madison</a>,
-				expecting to gradudate in Dec 2020. Before that, I received my M.S. and B.S. in Electrical
-				Engineering at <a href="https://www.ntu.edu.tw/english/" target="_blank">National Taiwan University</a>.
-			</p>
-			<p class="intro">
-				This summer I was honored to join <a href="https://www.ambarella.com/">Ambarella Inc.</a> as a software architect intern,
-				working with the senior staff software architecture engineer <a
-					href="https://www.linkedin.com/in/wei-fang-97485146">Wei
-					Fang</a> on <span class="interest">efficient neural network training</span> and <span
-					class="interest">hardware-friendly pruning</span> for computer vision SoC. Previously, I worked as a machine learning
-				engineer at <a href="https://piccollage.com/">PicCollage</a> for developing machine learning models in mobile applications,
-				and spent wonderful years with Dr. <a href="https://scholar.google.com.tw/citations?user=mgva3UgAAAAJ">Sheng-Wei Chen</a> on applied deep
-				learning for healthcare research at Academia Sinica.
-			</p>
-			<p class="intro">
-				I am interested in <span class="interest">efficient deep learning</span> and <span
-					class="interest">on-device AI</span>. My recent research has been published in <a href="https://www.nature.com/articles/s41746-019-0104-2">Nature
-					Digital Medicine</a>, <a href="https://www.nature.com/articles/s41467-019-12500-2"></a>Nature Communications</a>, and <a href="https://ieeexplore.ieee.org/abstract/document/8851922">IEEE
-					International Joint Conference on Neural Networks (IJCNN)</a>.
-			</p>
-		</div>
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+              <div class="content">
+                <header>
+                  <h4>Efficient and Robust Convolutional Neural Networks via Channel Prioritization and Path Ensemble</h4>
+                  <p><b><u>Chun-Min Chang</u></b>, Chia-Ching Lin, and Kuan-Ta Chen<br>
+                  <span class="green">IEEE Joint Conference on Neural Networks (IJCNN) 2019</span> / <a href="https://ieeexplore.ieee.org/document/8851922">Paper</a></p>
+                </header>
+                <p>We proposed a novel training algorithm for convolutional neural networks to achieve dynamic inference at run time and enhance model robustness against adversarial attacks without any extra computational cost or memory overhead.</p>
+              </div>
+              <div class="image">
+                <img src="images/cpcnn.png"/>
+              </div>
+            </section>
 
-		<div id="cv">
-			<p class="info">
-				<a href="https://github.com/twcmchang/site/raw/master/pdf/cv_public.pdf" target="_blank"
-					style="font-size: 15pt"><img src="images/PDF.png" style="width: 25px; height: 25px"> CV</a> <span
-					style="font-size: 12pt; font-weight: 300;">(updated: 01/2020)</span>
-				<a href="https://github.com/twcmchang/" target="_blank" style="font-size: 15pt; padding-left: 10pt"><img
-						src="images/github.png" style="width: 25px; height: 25px"> GitHub</a>
-				<a href="https://scholar.google.com.tw/citations?user=Xw3CAEwAAAAJ" target="_blank"
-					style="font-size: 15pt; padding-left: 10pt"><img src="images/gscholar.png"
-						style="width: 25px; height: 25px"> Google Scholar</a>
-			</p>
-		</div>
-		<div id="contact">
-			<p class="info">Contact email: <span style="color:#EF8; padding-left:8px"><b>twcmchang</b> (at) <b>gmail</b>
-					(dot) <b>com</b></span></p>
-		</div>
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+              <div class="content">
+                <header>
+                  <h4>Performance Measurements of Virtual Reality Systems: Quantifying the Timing and Positioning accuracy</h4>
+                  <p><b><u>Chun-Min Chang</u></b>, Cheng-Hsin Hsu, Chih-Fan Hsu, and Kuan-Ta Chen<br>
+                  <span class="green">ACM International Conference on Multimedia (ACM MM) 2016 / <a href="https://dl.acm.org/doi/10.1145/2964284.2967303">Paper</a></span>
+                  </p>
+                </header>
+                <p>We propose the very first non-intrusive measurement methodology for quantifying the timing and positioning accuracy of commodity Virtual Reality (VR) systems. Our methodology considers the VR system under test as a black-box and can work with any VR applications without code instrument or system modification.</p>
+              </div>
+              <div class="image">
+                <img src="images/mm.png"/>
+              </div>
+            </section>
+            <hr>
+            <header class="align-left">
+              <h3>Side Projects</h3>
+            </header>
 
-		<div class="content">
-			<h2 class="sec_title">Work Experience</h2>
-			<div class="exp">
-				<div class="exp_pic"> <img src="images/ambarella-logo.png" width="70"> </div>
-				<div class="exp_content">
-					<b>Software Architecture Engineer Intern</b> <span class="and">at</span> <b>Ambarella
-						Inc.</b>, Jun. 2020 - Now
-					<br>
-					<span class="venue">
-						Focused on efficient training and network pruning in <a
-							href="https://www.ambarella.com/technology/#cvflow">CVflow</a> chips </span><br>
-					<span class="exp_intro">
-						- Developed hardware-friendly algorithms to accelerate and stabilize quantized training on SoC.
-						<br>
-						- Extended the software flexibility to compress various types of CNNs by structured pruning.
-						<br>
-						- Deployed industry-standard models in Caffe, TensorFlow, and ONNX formats to run on Ambarella's
-						processors.
-						<br>
-					</span>
-				</div>
-			</div>
-			<div class="exp">
-				<div class="exp_pic"> <img src="images/piccollage.png" width="60" height="60"> </div>
-				<div class="exp_content">
-					<b>Machine Learning Engineer</b> <span class="and">at</span> <b>Cardinal Blue Software Inc.
-						(PicCollage)</b>, Jan. 2019 - Jul. 2019
-					<br>
-					<span class="venue">
-						Focused on building deep learning models for computer vision tasks on mobiles</span><br>
-					<span class="exp_intro">
-						- Developed efficient models to execute image segmentation on mobile devices in less than 0.5
-						seconds.<br>
-						- Used network pruning, quantization, and knowledge distillation to improve efficiency by
-						50%.<br>
-						- Deployed compact deep learning models, smaller than 1MB, for image super-resolution and
-						enhancement on mobiles.
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+              <div class="content">
+                <header>
+                  <h4>Non-invasive Estimation of Fasting Blood Glucose using PPG and ECG Signals</h4>
+                  <p><b><u>Chun-Min Chang</u></b> and Kuan-Ting Liu<br>Collaboration with Applied Science Institute, Academis Sinica, 2018</p>
+                </header>
+                <p>We leveraged signal processing and machine learning to transform in-the-wild sensor data from the wearable device into intelligent health experiences. Training over 1,200 records from 600 fasting participants, our non-invasive approach showed over 93.5% of test samples in zone A of the Clarke consensus error grid.</p>
+              </div>
+              <div class="image">
+                <img src="images/ppg.png"/>
+              </div>
+            </section>
 
-					</span>
-				</div>
-			</div>
-			<div class="exp">
-				<div class="exp_pic"> <img src="images/as.png" width="60" height="60"> </div>
-				<div class="exp_content">
-					<b>Research Assistant</b> <span class="and">at</span> <b>Academia Sinica</b> (alternative military
-					service), Oct. 2015 - Dec.
-					2018<br>
-					<span class="venue">Conducted research on the efficiency and robustness of deep learning and its
-						applications in healthcare</span><br>
-					<span class="exp_intro">
-						- Designed a nephrologist-level chronic kidney disease diagnosis system using ultrasoud imaging
-						by TensorFlow.<br>
-						- Identified neurodegeneration by a 3D convolutional neural network using patients' CT images
-						and chronological age.<br>
-						- Estimated blood glucose accurately and noninvasively using ECG and PPG signals processed by a
-						multi-scale CNN.<br>
-						- Other research projects: crime factor analysis, churn prediction, and quantitative evaluation
-						of VR systems.
-					</span>
-				</div>
-			</div>
-			<div class="exp">
-				<div class="exp_pic"> <img src="images/ms.png" width="50" height="50"> </div>
-				<div class="exp_content">
-					<b>Research and Software Development Intern</b> <span class="and">at</span> <b>Microsoft Taiwan</b>,
-					Jul. 2014 - Jun. 2015<br>
-					<span class="venue">Worked on data infrastructure and anomly detection of real-time streaming
-						data</span>
-					<br>
-					<span class="exp_intro">
-						- Established an IoT framework on Microsoft Azure from data streaming to data mining <br>
-						- Created a smart home demonstration as a proof of concept of AI+IoT
-					</span>
-				</div>
-			</div>
-		</div>
+            <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+              <div class="content">
+                <header>
+                  <h4>Unsupervised Semantic Segmentation of Histology Images</h4>
+                  <p><b><u>Chun-Min Chang</u></b>, and Bin Li<br>
+                    Collaboration with Biomedical Engineering, University of Wisconsin-Madison, 2019</p>
+                </header>
+                <p>We design a unsupervised model for differentiating histology tissue matrices. The learning algorithm is guided by superpixel refinement and deep feature clustering, and beats other unsupervised methods in metrics of accuracy and inference time.</p>
+              </div>
+              <div class="image">
+                <img src="images/histology.gif"/>
+              </div>
+            </section>
+          </div>
+        </section>
 
-		<div class="content">
-			<h2 class="sec_title">Research</h2>
-			<div id="r01" class="research" style="background-image:url(images/resbg2.png);">
-				<div class="res_pic"> <img src="images/r01.png" width="272"> </div>
-				<div class="res_desc" background-image="images/resbg2.png">
-					<h4>Automation of The Kidney Function Prediction and Classification Through Ultrasound-based Kidney
-						Imaging Using Deep Learning<br></h4>
-					<span class="author" style="letter-spacing: -0.1pt">Chin-Chi Kuo, <span class="me">Chun-Min
-							Chang</span>, Kuan-Ting Liu, Wei-Kai Lin, Hsiu-Yin Chiang, Chih-Wei Chung, Meng-Ru Ho,
-						Pei-Ran Sun, Rong-Lin Yang, <span class="and">and</span> Kuan-Ta Chen</span><br>
-					<span class="venue">Nature Digital Medicine, 2019</span><br>
-
-					<img src="images/arrow.png" height="15" width="30" style="padding: 5pt 3pt 0 0">
-					<a href="https://www.nature.com/articles/s41746-019-0104-2" target="_blank">paper</a>
-					<span class="sep">•</span>
-					<a href="#r09bibtex" onclick="bibtex(&#39;r09_bibtex_sh&#39;,&#39;r09_bibtex_div&#39;)">BibTex</a>
-					<span class="showhide" id="r09_bibtex_sh">(show)</span><br>
-					<div class="bibtex" id="r09_bibtex_div">
-						@article{kuo2019automation,<br>
-						&nbsp;&nbsp;title={Automation of the kidney function prediction and classification through
-						ultrasound-based kidney imaging using deep learning},<br>
-						&nbsp;&nbsp;author={Kuo, Chin-Chi and Chang, Chun-Min and Liu, Kuan-Ting and Lin, Wei-Kai and
-						Chiang, Hsiu-Yin and Chung, Chih-Wei and Ho, Meng-Ru and Sun, Pei-Ran and Yang, Rong-Lin and
-						Chen, Kuan-Ta},<br>
-						journal={npj Digital Medicine},<br>
-						&nbsp;&nbsp;volume={2},<br>
-						&nbsp;&nbsp;number={1},<br>
-						&nbsp;&nbsp;pages={29},<br>
-						&nbsp;&nbsp;year={2019},<br>
-						&nbsp;&nbsp;publisher={Nature Publishing Group}
-						&nbsp;&nbsp;}
-					</div>
-					<div class="res_divider"> <img src="images/divider2.png" width="800" height="2"> </div>
-					<div class="res_intro">
-						<div class="res_intro_pic"> <img src="images/thinkout.png" width="40"> </div>
-						<div class="res_intro_text">
-							We developed a deep learning approach to determine the estimated glomerular
-							filtration rate (eGFR) and chronic kidney disease (CKD) status automatically. We exploited the transfer
-							learning technique, integrating the powerful ResNet model pretrained on the ImageNet dataset
-							in our network architecture, and achieved a nephrologist-level classification accuracy for
-							diagnosing CKD over 4,505 kidney ultrasound images.
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<p>&copy; Chun-Min Chang, May 2021. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="r02" class="research" style="background-image:url(images/resbg2.png);">
-				<div class="res_pic"> <img src="images/r04.png" width="272"> </div>
-				<div class="res_desc" background-image="images/resbg2.png">
-					<h4>Artificial Intelligence Reveals Environmental Constraints on Colour Diversity in Insects<br>
-					</h4>
-					<span class="author" style="letter-spacing: -0.1pt">Sipher Wu*, <span class="me">Chun-Min
-							Chang*</span>, Guan-Shuo Mai, Dustin R Rubenstein, Chen-Ming Yang, Yu-Ting Huang, Hsu-Hong
-						Lin, Li-Cheng Shih, Sheng-Wei Chen, <span class="and">and</span> Sheng-Feng Shen<br>
-						<span class="venue">Nature Communications (*equal contribution), 2019</span><br>
-
-						<img src="images/arrow.png" height="15" width="30" style="padding: 5pt 3pt 0 0">
-						<a href="https://www.nature.com/articles/s41467-019-12500-2" target="_blank">paper</a> <span
-							class="sep">•</span>
-						<a href="https://github.com/twcmchang/colorful-moth" target="_blank">code</a> <span
-							class="sep">•</span>
-						<a href="#r02bibtex"
-							onclick="bibtex(&#39;r02_bibtex_sh&#39;,&#39;r02_bibtex_div&#39;)">BibTex</a> <span
-							class="showhide" id="r02_bibtex_sh">(show)</span><br>
-						<div class="bibtex" id="r02_bibtex_div">
-							@article{wu2019artificial,<br>
-							&nbsp;&nbsp;title={Artificial intelligence reveals environmental constraints on colour
-							diversity in insects},<br>
-							&nbsp;&nbsp;author={Wu, Shipher and Chang, Chun-Min and Mai, Guan-Shuo and Rubenstein,
-							Dustin R and Yang, Chen-Ming and Huang, Yu-Ting and Lin, Hsu-Hong and Shih, Li-Cheng and
-							Chen, Sheng-Wei and Shen, Sheng-Feng},<br>
-							&nbsp;&nbsp;journal={Nature communications},<br>
-							&nbsp;&nbsp;volume={10},<br>
-							&nbsp;&nbsp;number={1},<br>
-							&nbsp;&nbsp;pages={1--9},<br>
-							&nbsp;&nbsp;year={2019},<br>
-							&nbsp;&nbsp;publisher={Nature Publishing Group}
-							&nbsp;&nbsp;}
-						</div>
-						<div class="res_divider"> <img src="images/divider2.png" width="800" height="2"> </div>
-						<div class="res_intro">
-							<div class="res_intro_pic"> <img src="images/thinkout.png" width="40"> </div>
-							<div class="res_intro_text">
-								We demonstrated how deep learning can reveal subtle but robust patterns of colour
-								feature variation along an ecological gradient, as well as help identify the underlying
-								mechanisms generating this biogeographic pattern. Using over 20,000 images with GPS
-								locality information belonging to nearly 2,000 moth species, our deep learning model
-								learned deep representations that accurately predict each species’ mean elevation based
-								on colour and shape.
-							</div>
-						</div>
-				</div>
-			</div>
-
-			<div id="r03" class="research" style="background-image:url(images/resbg2.png);">
-				<div class="res_pic"> <img src="images/r02.png" width="272"> </div>
-				<div class="res_desc">
-					<h4>Efficient and Robust Convolutional Neural Networks via Channel Prioritization and Path
-						Ensemble<br></h4>
-					<span class="author"><span class="me">Chun-Min Chang</span>, Chia-Ching Lin, <span
-							class="and">and</span> Kuan-Ta Chen</span><br>
-					<span class="venue">IEEE Joint Conference on Neural Networks (<b>IJCNN</b>), 2019</span><br>
-					<img src="images/arrow.png" height="15" width="30" style="padding: 5pt 3pt 0 0">
-					<a href="https://ieeexplore.ieee.org/abstract/document/8851922" target="_blank">paper</a> <span
-						class="sep">•</span>
-					<a href="#r03bibtex" onclick="bibtex(&#39;r03_bibtex_sh&#39;,&#39;r03_bibtex_div&#39;)">BibTex</a>
-					<span class="showhide" id="r03_bibtex_sh">(show)</span><br>
-					<div class="bibtex" id="r03_bibtex_div">
-						@inproceedings{chang2019efficient,<br>
-						&nbsp;&nbsp;title={Efficient and Robust Convolutional Neural Networks via Channel Prioritization
-						and Path Ensemble},<br>
-						&nbsp;&nbsp;author={Chang, Chun-Min and Lin, Chia-Ching and Chen, Kuan-Ta},<br>
-						&nbsp;&nbsp;booktitle={2019 International Joint Conference on Neural Networks (IJCNN)},<br>
-						&nbsp;&nbsp;pages={1--8},<br>
-						&nbsp;&nbsp;year={2019},<br>
-						&nbsp;&nbsp;organization={IEEE}
-						&nbsp;&nbsp;}
-					</div>
-					<div class="res_divider"> <img src="images/divider2.png" width="800" height="2"> </div>
-					<div class="res_intro">
-						<div class="res_intro_pic"> <img src="images/thinkout.png" width="40"> </div>
-						<div class="res_intro_text">
-							We proposed a novel convolutional neural networks (CNNs) training algorithm, channel
-							prioritization and path ensemble (CPPE), to not only allow dynamically trade-offs between
-							different resource and performance requirements but also achieve robust inference without
-							any extra computational cost or memory overhead.
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div id="r04" class="research" style="background-image:url(images/resbg2.png);">
-				<div class="res_pic"> <img src="images/r03.png" width="272"> </div>
-				<div class="res_desc">
-					<h4>Performance measurements of virtual reality systems: Quantifying the timing and positioning
-						accuracy<br></h4>
-					<span class="author"><span class="me">Chun-Min Chang</span>, Cheng-Hsin Hsu, Chih-Fan Hsu, <span
-							class="and">and</span> Kuan-Ta Chen</span><br>
-					<span class="venue">ACM International Conference on Multimedia (<b>ACM MM</b>), 2016</span><br>
-
-					<img src="images/arrow.png" height="15" width="30" style="padding: 5pt 3pt 0 0">
-					<a href="http://ci2cv.net/media/papers/deepLK-icra.pdf" target="_blank">paper</a> <span
-						class="sep">•</span>
-					<a href="#r04bibtex" onclick="bibtex(&#39;r04_bibtex_sh&#39;,&#39;r04_bibtex_div&#39;)">BibTex</a>
-					<span class="showhide" id="r04_bibtex_sh">(show)</span><br>
-					<div class="bibtex" id="r04_bibtex_div">
-						@inproceedings{chang2016performance,<br>
-						&nbsp;&nbsp;title={Performance measurements of virtual reality systems: Quantifying the timing
-						and positioning accuracy},<br>
-						&nbsp;&nbsp;author={Chang, Chun-Ming and Hsu, Cheng-Hsin and Hsu, Chih-Fan and Chen,
-						Kuan-Ta},<br>
-						&nbsp;&nbsp;booktitle={Proceedings of the 24th ACM international conference on Multimedia},<br>
-						&nbsp;&nbsp;pages={655--659},<br>
-						&nbsp;&nbsp;year={2016},<br>
-						&nbsp;&nbsp;organization={ACM}<br>
-						&nbsp;&nbsp;}
-					</div>
-					<div class="res_divider"> <img src="images/divider2.png" width="800" height="2"> </div>
-					<div class="res_intro">
-						<div class="res_intro_pic"> <img src="images/thinkout.png" width="40"> </div>
-						<div class="res_intro_text">
-							We propose the very first non-intrusive measurement methodology for quantifying the
-							performance of commodity Virtual Reality (VR) systems. Our methodology considers the VR
-							system under test as a black-box and works with any VR applications. Multiple performance
-							metrics on timing and positioning accuracy are considered.
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-<!--
-		<div class="content">
-			<h2 class="sec_title">Talks</h2>
-			<div class="teach">
-				<div class="teach_pic"> <img src="" width="36" height="20"> </div>
-				<div class="teach_content">
-				</div>
-			</div>
-			<div class="teach">
-				<div class="teach_pic"> <img src="" width="36" height="20"> </div>
-				<div class="teach_content">
-				</div>
-			</div>
-			<div class="teach">
-				<div class="teach_pic"> <img src="" width="36" height="20"> </div>
-				<div class="teach_content">
-				</div>
-			</div>
-		</div>
--->
-		<div class="content">
-			<h2 class="sec_title">Academic Projects</h2>
-
-			<div style="float: left; width: 595px">
-
-				<div id="p01" class="project" style="float: left; background-image:url(images/resbg2.png);">
-					<h4>Unsupervised Semantic Segmentation of Histology Images</h4>
-					<h5>UW-Madison CS 838 Learning-based Methods in Computer Vision</h5>
-					<div class="proj_pic"> <img src="images/p01.png" width="216"> </div>
-					<div class="proj_desc">
-						<img src="images/arrow.png" height="15" width="30" style="padding: 0 3pt 0 0">
-						<a href="https://github.com/twcmchang/site/blob/master/pdf/report_cs838.pdf">report</a>
-						<span class="sep">•</span>
-						<a href="https://github.com/binli123/cs838projectdemo">code</a>&nbsp;&nbsp;<img
-							src="images/pytorch.png" height="15">
-						<div class="proj_divider"> <img src="images/divider2.png" width="200" height="2"> </div>
-						<div class="proj_intro">
-							We design a fully unsupervised model for differentiating histology tissue matrices. The
-							model training is guided by superpixel refinement and deep feature clustering. Our results
-							outperforms traditional unsupervised methods and other superpixel-based solutions.
-						</div>
-					</div>
-				</div>
-
-				<div id="p05" class="project" style="float: left; background-image:url(images/resbg2.png);">
-					<h4>Semantic Segmentation of Satellite Images</h4>
-					<h5>NTU CommE5052 Deep Learning for Computer Vision</h5>
-					<div class="proj_pic"> <img src="images/p05.png" width="216"> </div>
-					<div class="proj_desc">
-						<img src="images/arrow.png" height="15" width="30" style="padding: 0 3pt 0 0">
-						<a href="https://github.com/twcmchang/DLCV2018SPRING/tree/master/hw3">code</a>&nbsp;&nbsp;<img
-							src="images/tf.png" height="15">
-						<div class="proj_divider"> <img src="images/divider2.png" width="200" height="2"> </div>
-						<div class="proj_intro">
-							We implement a fully convolutional network (FCN) for semantic segmentation of satellite
-							images. FCN combines deep semantic information with shallow visual information to produce
-							accurate and detailed segmentations.
-						</div>
-					</div>
-				</div>
-
-				<div id="p02" class="project" style="float: left; background-image:url(images/resbg2.png);">
-					<h4>Sequence-to-Sequence: Video Captioning</h4>
-					<h5>NTU CommE5045 Machine Learning and Having it Deep and Structrued</h5>
-					<div class="proj_pic"> <img src="images/p02.png" width="216" height="135"> </div>
-					<div class="proj_desc">
-						<img src="images/arrow.png" height="15" width="30" style="padding: 0 3pt 0 0">
-						<a href="https://github.com/twcmchang/MLDS2017/tree/master/hw2">code</a>&nbsp;&nbsp;<img
-							src="images/tf.png" height="15">
-						<div class="proj_divider"> <img src="images/divider2.png" width="200" height="2"> </div>
-						<div class="proj_intro">
-							We implement the sequence-to-sequence model for video captioning. Specifically, we input a
-							sequence of visual features extracted from VGG-16 to a LSTM model and then generate a
-							caption by another LSTM model.
-						</div>
-					</div>
-				</div>
-				<div id="p04_video_div" class="video_div" style="float: left">
-					<video id="p04_video" width="300" height="534" controls="">
-						<source src="lusee.mp4" type="video/mp4"> Does not support... </video>
-				</div>
-
+					</footer>
 
 			</div>
-			<div style="float: right; width: 595px">
 
-				<div id="p03" class="project" style="float: left; background-image:url(images/resbg2.png);">
-					<h4>Face Recognition on Mobiles</h4>
-					<h5>NTU CommE5052 Deep Learning for Computer Vision</h5>
-					<div class="proj_pic"> <img src="images/p03.png" width="205"> </div>
-					<div class="proj_desc">
-						<img src="images/arrow.png" height="15" width="30" style="padding: 0 3pt 0 0">
-						<a
-							href="https://github.com/twcmchang/site/blob/master/pdf/poster_mobile-face-recog.pdf">report</a>
-						<span class="sep">•</span>
-						<a href="https://github.com/twcmchang/DLCV2018SPRING/tree/master/final">code</a>&nbsp;&nbsp;<img
-							src="images/tf.png" height="15">
-						<div class="proj_divider"> <img src="images/divider2.png" width="200" height="2"> </div>
-						<div class="proj_intro">
-							We design an network architecture optimization framework to compress a VGG-16 based model
-							for face recognitio, achieving 60% size reduction and 87% of accuracy over 2,356 identities.
-							Besides, our model beats MobileNet and SqueezeNet by at least 20% accuracy.
-						</div>
-					</div>
-				</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-				<div id="p06" class="project" style="float: left; background-image:url(images/resbg2.png);">
-					<h4>Conditional Face Generation with Feature Distanglement</h4>
-					<h5>NTU CommE5052 Deep Learning for Computer Vision</h5>
-					<div class="proj_pic"> <img src="images/p06.png" width="216"> </div>
-					<div class="proj_desc">
-						<img src="images/arrow.png" height="15" width="30" style="padding: 0 3pt 0 0">
-						<a href="https://github.com/twcmchang/DLCV2018SPRING/tree/master/hw4"
-							target="_blank">code</a>&nbsp;&nbsp;<img src="images/tf.png" height="15">
-						<div class="proj_divider"> <img src="images/divider2.png" width="200" height="2"> </div>
-						<div class="proj_intro">
-							We design a variational auto-encoder to randomly generate realistic facial images and a
-							generative network to disentangle image embeddings into distinct and controllable attributes
-							for image manipulation.
-						</div>
-					</div>
-				</div>
-
-				<div id="p04" class="project" style="float: left; background-image:url(images/resbg2.png);">
-					<h4>Non-invasive Glucose Estimation via PPG and ECG signals</h4>
-					<h5>Collaborative project with Applied Science Institute at Academia Sinica</h5>
-					<div class="proj_pic"> <img src="images/p04.png" width="190"> </div>
-					<div class="proj_desc">
-						<img src="images/arrow.png" height="15" width="30" style="padding: 0 3pt 0 0">
-						working on
-						<div class="proj_divider"> <img src="images/divider2.png" width="200" height="2"> </div>
-						<div class="proj_intro">
-							We propose a multi-fidelity 1D CNN to estimate glucose from ECG and PPG signals, which are
-							measured in a non-invasive way. The consensus error grid showes that our approach would not
-							lead to any inappropriate treatment.
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
-		<p align="center" style="font: 300 Roboto">
-			<img src="images/bar.png" width="500" height="4">
-			<br><br>
-			©
-			<script type="text/javascript">
-				var d = new Date()
-				document.write(d.getFullYear())
-			</script>
-			originally designed by Chen-Hsuan Lin, revised by Chun-Min Chang.
-			<br><br>
-		</p>
-
-	</div>
-	<!-- javascript at the bottom for fast page loading -->
-	<script type="text/javascript" src="css/jquery.js"></script>
-	<script type="text/javascript" src="css/jquery.easing-sooper.js"></script>
-	<script type="text/javascript" src="css/jquery.sooperfish.js"></script>
-	<script type="text/javascript">
-		var r01_video_show = false;
-		var r03_video_show = false;
-		var p04_video_show = false;
-		var oldupdate_show = false;
-
-		$(document).ready(function () {
-			$("#p04_video_link").click(function () {
-				if (!p04_video_show) {
-					$("#p04_video_div").fadeIn("slow", function () {
-						$("#p04_video").get(0).play();
-						$("#p04_video_sh").text("(hide)");
-					});
-					p04_video_show = true;
-				}
-				else {
-					$("#p04_video_div").fadeOut("slow", function () {
-						$("#p04_video").get(0).load();
-						$("#p04_video_sh").text("(show)");
-					});
-					p04_video_show = false;
-				}
-			});
-			$("#oldupdate_link").click(function () {
-				if (!oldupdate_show) {
-					$("#update_old").fadeIn("slow", function () { $("#update_sh").text("(hide)"); });
-					oldupdate_show = true;
-				}
-				else {
-					$("#update_old").fadeOut("slow", function () { $("#update_sh").text("(show)"); });
-					oldupdate_show = false;
-				}
-			});
-			$("#page").hide();
-		});
-
-		function bibtex(bibtex, bibtex_div) {
-			var div = document.getElementById(bibtex);
-			if (div.innerHTML.indexOf("show") != -1) {
-				$("#" + bibtex).text("(hide)");
-				$("#" + bibtex_div).fadeIn(500);
-			}
-			else {
-				$("#" + bibtex).text("(show)");
-				$("#" + bibtex_div).fadeOut(500);
-			}
-		}
-	</script>
-
-	<script type="text/javascript">
-		var pageisopen = false;
-		document.onkeydown = function (e) {
-			if (e.keyCode == 27) closeprojectpage();
-		}
-		document.onclick = function (e) {
-			if (pageisopen && !$(e.target).closest("#page").length) closeprojectpage();
-		}
-		function openprojectpage(url) {
-			document.getElementById("page-content").src = url;
-			$("#page").fadeIn(500);
-			delay = setTimeout(function () { pageisopen = true; }, 500);
-		}
-		function closeprojectpage() {
-			$("#page").fadeOut(200);
-			pageisopen = false;
-			clearTimeout(delay);
-		}
-	</script>
-
-</body>
-
+	</body>
 </html>
